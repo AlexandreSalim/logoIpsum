@@ -1,0 +1,315 @@
+.caixa {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(192, 232, 255);
+    font-size: 12px;
+
+    .form {
+        height: 95%;
+        width: 40%;
+        border: solid 1px #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        flex-wrap: wrap;
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            width: 250px;
+
+            img {
+                height: 30px;
+                width: 120px;
+            }
+        }
+
+        .titulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+            margin-top: 30px;
+
+            p {
+                color: #999;
+                margin: 0;
+                width: 250px;
+
+            }
+
+            h1 {
+                font-weight: bold;
+                width: 250px;
+            }
+        }
+
+        .inputs {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            input {
+                padding: 5px;        
+                height: 40px;
+                width: 250px;
+                border-radius: 3px;
+                border: solid 1px #9994;
+                box-shadow: 0 2px 10px 1px #9994;
+                background-color: #fff;
+            
+            }
+
+            label {
+                width: 250px;
+                margin-top: 20px;
+            }
+        }   
+
+        .inputCheck {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+
+
+            .checkbox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: start;
+                width: 250px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin-left: 15px;
+                    }
+                }
+                    
+            }
+        
+            input {
+                height: 20px;
+                width: 20px;
+                box-shadow: 0 2px 10px 1px #9994;
+
+            }
+
+
+        }
+
+        button {
+            height: 40px;
+            width: 250px;
+            border-radius: 7px; 
+            border: solid 1px #9994;  
+            color: #999;
+     
+        }
+        .button-login {
+            margin-top: 40px;
+        }
+
+        .button {
+            background-color: rgb(25, 132, 255);
+            color: #fff;
+            font-size: 15px;   
+     
+        }
+
+        .google {
+            display: flex;
+            align-items: center;
+            border: solid 1px #9994;
+            background-color: #fff;
+
+           img{
+
+            margin-right: 65px;
+            height: 30px;
+            width: 30px;
+            margin-left: 15px;           
+           }
+        }
+
+        .facebook {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            border: solid 1px #9994;
+            background-color: #fff;
+
+
+           img{
+            margin-right: 65px;
+            height: 30px;
+            width: 30px;
+            margin-left: 15px;           
+           }  
+        }
+
+        .paragrafo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            margin-top: 30px;
+        }
+
+        a{
+            color:rgb(53, 147, 255);
+            text-decoration: none;
+        }
+
+    }
+
+    .caixa-esquerda {
+        height: 95%;
+        width: 50%;
+        background: linear-gradient(130deg, rgb(53, 147, 255), rgb(53, 147, 255), rgba(134, 94, 186, 0.188), rgba(174, 115, 252, 0.188),  rgb(116, 227, 255), rgb(116, 255, 255));  
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+
+       h2:nth-child(1) {
+        margin-top: 20%;
+       }
+
+       h2:nth-child(2) {
+        margin-bottom: 40px;
+       }
+
+       div {
+        p {
+            font-size: small;
+            text-align: center;
+        }
+       }
+
+    }
+
+
+
+}
+
+.linha {
+    margin: 25px 0;
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #999;
+
+    
+    hr{
+        width: calc( 210.13px / 2);
+    }
+}
+
+.div {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+}
+
+.error {
+    color: red;
+    width: 250px;
+    text-align: start;
+    margin: 12px 0;
+}
+
+.acerto {
+    color: blue;
+    width: 250px;
+    text-align: start;
+    margin: 12px 0;
+}
+
+@media screen and (max-width: 375px) {
+    .caixa {
+        .form {
+            display: block;
+            height: 100%;
+            width: 50%;
+
+            nav {
+                width: 100%;
+        
+                img {
+                    height: 20px;
+                    width: 120px;
+                }
+            }
+
+            .titulo {
+                width: 100%;
+
+    
+                p {
+                    width: 100%;
+                }
+    
+                h1 {
+                    width: 100%;
+                }
+            }
+            .checkbox, button {
+                width: 100%;
+            }
+
+            .inputs {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+    
+                label {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .caixa-esquerda {
+            height: 100%;
+            width: 50%;
+    
+    
+           h2:nth-child(1) {
+            margin-top: 20%;
+           }
+    
+           h2:nth-child(2) {
+            margin-bottom: 40px;
+           }
+    
+           div {
+            p {
+                font-size: small;
+                text-align: center;
+            }
+           }
+    
+        }
+    
+        .linha {
+            width: 100%;
+            hr{
+                width: calc( 150px / 2);
+            }
+        }
+    
+    }
+
+}

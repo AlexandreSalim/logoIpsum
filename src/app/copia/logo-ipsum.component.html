@@ -1,0 +1,68 @@
+<div class="caixa">
+    <form class="form">
+        <nav><img src="../../assets/img/logoipsum-297.svg" alt="logo"></nav>
+        
+        <div class="titulo">
+            <h1>Welcome back!</h1>
+            <p>Start managing your system faster and better</p>
+        </div>
+
+        <div class="inputs">
+
+            <label for="email">Email</label>
+            <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="input your email here"
+            [formControl]="email"
+            >
+
+            <label for="password">Password</label>
+            <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="Re-Type your password"
+            [formControl]="password"
+            >
+
+        </div>
+        
+        <div class="inputCheck">
+            <div class="checkbox">
+                <div>
+                    <input type="checkbox">
+                    <p>Remenber me</p>
+                </div>
+                <a href="#">Fogot Password</a>
+            </div>
+        </div>
+
+        <p *ngIf="email.hasError('email')" style="color: red;">email obrigatório</p>
+        <p *ngIf="!email.hasError('email') && password.hasError('minlength') && password.touched" style="color: red;">Senha com no minimo 7 carcteres</p>
+
+        <div class="button-login">
+            <button class="button" (click)="send()">Login</button>
+        </div>
+
+        <div class="linha">
+            <hr>or<hr>
+        </div>
+
+        <button class="google"><img src="../../assets/img/logotipo_da_empresa_google.jpg" alt="google">Continue with Google</button>
+        <button class="facebook"><img src="../../assets/img/facebook.jpg" alt="facebook">Continue with Facebook</button>
+
+        <p class="paragrafo">Dont have an acoount? <a href="#">sign up</a></p>
+
+    </form>
+    <div class="caixa-esquerda">
+        <h2>Join over 62,000 + Digital marketer</h2>
+        <h2>and business owners around the world</h2>
+        
+        <div>
+            <p>One morning, when Gregor Sansa woke from troubled dreams, he</p>
+            <p>found himself transforme in his bed into a horrible vermin.</p>
+        </div>
+    </div>
+</div>
